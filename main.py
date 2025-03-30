@@ -12,7 +12,7 @@ def main ():
   print ("Analyzing book found at books/frankenstein.txt...")
   print ("----------- Word Count ----------")
   words = word_count("books/frankenstein.txt")
-  print(f"{words} words found in the document")
+  print(f"Found {words} total words")
   print ("--------- Character Count -------")
   sorted = sort_dict (dic_characters("books/frankenstein.txt"))
   for item in sorted:
