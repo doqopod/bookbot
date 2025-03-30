@@ -27,7 +27,7 @@ def dic_characters (path):
     character = character.lower()
        
     if character in dictionary:
-
+      
       dictionary[character] += 1
 
     else:
@@ -35,3 +35,18 @@ def dic_characters (path):
       dictionary[character] = 1
 
   return dictionary
+
+def sort_on (dict):
+  return dict["amount"]
+
+def sort_dict (dict):
+
+  sorted = []
+
+  for letter in dict.keys():
+
+    sorted.append({"letter": letter, "amount": dict[letter]})
+
+  sorted.sort(reverse=True, key=sort_on)
+
+  return sorted
